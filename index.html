@@ -38,7 +38,7 @@
 
 
     @media only screen and (min-width: 900px) {   
-        .app-list li a {
+        .apps li a {
             margin-top: -100px;
             padding: 60px;
         }
@@ -60,10 +60,19 @@
     }
     
     .affix{
-        background-color: #083c96 !important;
+        background-color: #06155a !important;
     }
+
     .feature-img-wrap.text-center {
     margin: 10px 0px
+    }
+
+    .footer-bottom.py-3.gray-light-bg {
+    background-color: #06155a !important;
+    color: white;
+}
+    .single-promo-card:hover {
+        border-color: #06155a;
     }
 
 </style>
@@ -161,7 +170,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="application-hosting-wrap">
-                            <ul class="app-list">
+                            <ul class="app-list apps">
                                 <li><a href="#" class="bg-white shadow text-dark"><img src="assets/img/pancake.png" alt="icon"> <span>Pancake Swap</span></a></li>
                                 <li><a href="#chart" class="bg-white shadow text-dark"><img src="assets/img/chart.png" alt="icon"> <span>Live chart<br></span></a></li>
                                 <li><a href="#" class="bg-white shadow text-dark"><img src="assets/img/whitepaper.png" alt="icon"> <span>Whitepaper</span></a></li>
@@ -192,7 +201,7 @@
                     <div class="row align-items-center justify-content-between mt-5">
                         <div class="col-md-5 col-lg-6 d-md-block d-lg-block">
                             <div class="feature-img-wrap text-center">
-                                <img src="assets/img/taust_2.jpg" class="img-fluid" alt="freedomtoken_democratics">
+                                <img src="assets/img/taust_1.jpg" class="img-fluid" alt="freedomtoken_democratics">
                             </div>
                         </div>
                         <div class="col-md-7 col-lg-6">
@@ -253,28 +262,74 @@
         </div>
         </section>
 
-        <section class="telegram ptb-60 primary-bg">
+        <section class="promo-section pt-100 ">
             <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-12 col-lg-6">
-                        <div class="cta-content-wrap text-white">
-                            <h2 class="text-white">Join our telegram community</h2>
-                            <p>Lorem ipsum </p>
-                        </div>
-                        <div class="support-action d-inline-flex flex-wrap">
-                            <a href="#" class="mb-0"><i class="fas fa-comment mr-1 color-accent"></i> <span>@freedomtoken</span></a>
+                <div class="row justify-content-center">
+                    <div class="col-md-9 col-lg-8">
+                        <div class="section-heading text-center mb-5">
+                            <h2>Join our community</h2>
+                            <p class="lead">Keep in touch!</p>
                         </div>
                     </div>
-                    <div>
-                        <div class="cta-img-wrap text-z">
-                            <img src="assets/img/telegram_2.png" id="telegram" width="250" class="img-fluid" alt="telegram_freedomtoken">
+                </div>
+                <div class="row justify-content-md-center justify-content-sm-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card single-promo-card text-center p-3 my-3">
+                            <div class="card-body">
+                                <div class="pb-2">
+                                    <a href="#" class="dark-bg text-white"><img src="assets/img/telegram.svg" alt="icon"></a>
+                                </div>
+                                <div class="pt-2 pb-3">
+                                    <h5>Let's talk</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card single-promo-card text-center p-3 my-3">
+                            <div class="card-body">
+                                <div class="pb-2">
+                                    <a href="#" class="dark-bg text-white"><img src="assets/img/telegram.svg" alt="icon"></a>
+                                </div>
+                                <div class="pt-2 pb-3">
+                                    <h5>Let's talk</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card single-promo-card text-center p-3 my-3">
+                            <div class="card-body">
+                                <div class="pb-2">
+                                    <span class="fas fa-envelope icon-size-lg color-primary"></span>
+                                </div>
+                                <div class="pt-2 pb-3">
+                                    <h5>Let's talk</h5>
+                                    <!-- <p>Say something to start the chat freedomtoken@gmail.com</p> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--call to action end-->
 
+
+        <div class="footer-bottom py-3 gray-light-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <div class="copyright-wrap small-text">
+                            <p class="mb-0">&copy; Freedomtoken</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="terms-policy-wrap text-lg-right text-md-right text-left">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--scroll bottom to top button start-->
