@@ -1,5 +1,6 @@
 "use strict";
 
+
 // TABLE OF CONTENTS
 //  1. preloader
 //  2. page scrolling feature - requires jQuery Easing plugin
