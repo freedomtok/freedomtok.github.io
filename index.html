@@ -115,6 +115,15 @@
         auto;
     }
 
+    .icon {
+        max-width: 50px
+        !important;
+    }
+
+    .nodisplay {
+        display: none;
+    }
+
 </style>
 
 <body>
@@ -191,7 +200,7 @@
                     <div class="col-md-8 col-lg-8">
                         <div class="hero-content-left text-white text-center">
                             <h1 class="text-white display-4 font-weight-bolder">Freedom Token</h1>
-                            <p class="lead mb-4">Join the global</p>
+                            <p class="lead mb-4">Join the global movement!</p>
                             <!-- <p>&nbsp;<span class="copied">Copied!</span></p> -->
                             <a onclick="copyContract('contract')" class="btn btn-brand-03 btn-lg"><i class="far fa-clipboard mr-2"></i>0x05062a3199273415a4209c59eb02279cf8f90585</a>
                             <input type="text" hidden=true value="0x05062a3199273415a4209c59eb02279cf8f90585" id="contract">
@@ -212,7 +221,7 @@
                     <div class="col-12">
                         <div class="application-hosting-wrap">
                             <ul class="app-list apps">
-                                <li><a href="#" class="bg-white shadow text-dark"><img src="assets/img/pancake.png" alt="icon"> <span>Pancake Swap</span></a></li>
+                                <li><a href="#"  onClick='alert("Launching soon!")' class="bg-white shadow text-dark"><img src="assets/img/pancake.png" alt="icon"> <span>Pancake Swap</span></a></li>
                                 <li><a href="#chart" class="bg-white shadow text-dark"><img src="assets/img/chart.png" alt="icon"> <span>Live chart<br></span></a></li>
                                 <li><a href="token.rtf" class="bg-white shadow text-dark"><img src="assets/img/whitepaper.png" alt="icon"> <span>Whitepaper</span></a></li>
                             </ul>
@@ -266,7 +275,7 @@
                         <div class="col-md-7 col-lg-6">
                             <div class="feature-content-wrap">
                                 <h2>Security</h2>
-                                <p>Token has been reviewed by the security audit Company and passed the contract security audit! Contract is Verified!  We have no team wallets and token will be renounced on day one! So it´s 100% community thriven! </p>
+                                <p>Token has been reviewed by the security audit Company and passed the contract security audit! Contract is Verified! We have 1% wallet for marketing. We renounced token ownership on day one!</p>
                                 <!-- <a href="#" class="btn btn-outline-brand-01 mt-3" target="_blank">Learn More</a> -->
                             </div>
                         </div>
@@ -309,11 +318,11 @@
                         <div class="card single-promo-card text-center p-3 my-3">
                             <div class="card-body">
                                 <div class="pb-2">
-                                    <a href="#" class="dark-bg text-white"><img src="assets/img/telegram.svg" alt="icon"></a>
+                                    <a href="https://twitter.com/Freedom_BSC" class="dark-bg text-white"><img class="icon" src="assets/img/twitt.svg" alt="icon"></a>
                                 </div>
                                 <div class="pt-2 pb-3">
                                     <h5>Twitter</h5>
-                                    <p>@freedomtoken</p>
+                                    <a href="https://twitter.com/Freedom_BSC">@Freedom_BSC</a>
                                 </div>
                             </div>
                         </div>
@@ -322,11 +331,11 @@
                         <div class="card single-promo-card text-center p-3 my-3">
                             <div class="card-body">
                                 <div class="pb-2">
-                                    <a href="#" class="dark-bg text-white"><img src="assets/img/telegram.svg" alt="icon"></a>
+                                    <a href="https://t.me/joinchat/quL41XKJTXE4YTQ8" class="dark-bg text-white "><img class="icon" src="assets/img/telegram.svg" alt="icon"></a>
                                 </div>
                                 <div class="pt-2 pb-3">
                                     <h5>Telegram</h5>
-                                    <p>@freedomtoken</p>
+                                    <a href="https://t.me/joinchat/quL41XKJTXE4YTQ8">@freedomtoken</a>
                                 </div>
                             </div>
                         </div>
@@ -351,19 +360,19 @@
                             <ul class="app-list">
                                 <li>
                                     <a class="dark-bg text-white"><img src="assets/img/bnb.svg" alt="icon"> <span>BNB</span>
-                                        <input type="text" class="inner"  type=hidden value="bnb1tjr4x06862dltc6hedth46tpd80l2ya073f0cg" id="bnb">
+                                        <input type="text" class="inner" disabled  type=hidden value="bnb1tjr4x06862dltc6hedth46tpd80l2ya073f0cg" id="bnb">
                                         <button class="clipboard btn btn-outline-brand-03 mt-3" onclick="copyContract('bnb')"><i class="far fa-clipboard mr-2"></i></button>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dark-bg text-white"><img src="assets/img/eth.svg" alt="icon"> <span>ETH</span>
-                                        <input type="text" class="inner"  type=hidden value="0x32256A08aBA4265747B6F80170DC988061CDB5Cc" id="eth">
+                                        <input type="text" class="inner" disabled  type=hidden value="0x32256A08aBA4265747B6F80170DC988061CDB5Cc" id="eth">
                                         <button class="clipboard btn btn-outline-brand-03 mt-3" onclick="copyContract('eth')"><i class="far fa-clipboard mr-2"></i></button>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dark-bg text-white"><img src="assets/img/btc.svg" alt="icon"> <span>BTC</span>
-                                        <input type="text" class="inner"  type=hidden value="bc1q27wa02cfutr25vs53twdly28dnm8fxysf46cyv" id="btc">
+                                        <input type="text" class="inner" disabled  type=hidden value="bc1q27wa02cfutr25vs53twdly28dnm8fxysf46cyv" id="btc">
                                         <button class="clipboard btn btn-outline-brand-03 mt-3" onclick="copyContract('btc')"><i class="far fa-clipboard mr-2"></i></button>
                                     </a>
                                 </li>
