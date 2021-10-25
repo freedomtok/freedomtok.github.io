@@ -1,10 +1,5 @@
 "use strict";
 
-/*
-* Kohost v1.0.0 (https://themeforest.net/user/themetags)
-* Copyright 2020 Themetags
-* Licensed under ThemeForest License
-*/
 // TABLE OF CONTENTS
 //  1. preloader
 //  2. page scrolling feature - requires jQuery Easing plugin
