@@ -28,14 +28,18 @@
     @media only screen and (max-width: 600px) {
         .app-list{
         grid-template-columns: repeat(auto-fit, minmax(233px, 1fr))
-    }
+        }
         .col-lg-6 {
             flex-direction: column-reverse;
         }
         
         #contract {
            font-size: 1.4vh !important;
-}
+        }
+
+        .desktop-only {
+            display: none;
+        }
     }
 
 
@@ -54,6 +58,9 @@
         .address {
         font-size: 1.4vh;
     }
+        .mobile-only {
+            display: none;
+        }
     }
 
     .inner {
@@ -233,12 +240,20 @@
                         </div>
                     </div>
                     <div class="row align-items-center justify-content-between mt-5">
+                        <div class="col-md-7 col-lg-6 mobile-only">
+                            <div class="feature-content-wrap">
+                                <h2>3 fingers</h2>
+                                <p>Three Fingers
+                                    The three-finger salute is a hand gesture made by raising the index, middle and ring fingers, while holding the thumb to the little finger, and raising the hand in a salute. The gesture originated from The Hunger Games, but has been adopted by Freedom protest movements as the world is moving in the same direction as the movie shows.</p>                                    
+                                <!-- <a href="#" class="btn btn-outline-brand-01 mt-3" target="_blank">Learn More</a> -->
+                            </div>
+                        </div>
                         <div class="col-md-5 col-lg-6 d-md-block d-lg-block">
                             <div class="feature-img-wrap text-center">
                                 <img src="assets/img/taust_2.jpg" class="img-fluid" alt="freedomtoken_democratics">
                             </div>
                         </div>
-                        <div class="col-md-7 col-lg-6">
+                        <div class="col-md-7 col-lg-6  desktop-only">
                             <div class="feature-content-wrap">
                                 <h2>3 fingers</h2>
                                 <p>Three Fingers
