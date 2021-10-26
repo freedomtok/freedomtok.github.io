@@ -38,11 +38,10 @@
         <div id="logoAndNav" class="main-header-menu-wrap bg-transparent fixed-top">
             <div class="container">
                 <nav class="js-mega-menu navbar navbar-expand-md header-nav">
-
                     <!--logo start-->
                     <a class="navbar-brand pt-0" href="index.html"><img src="assets/img/lgo.png" alt="logo" class="img-fluid" /></a>
                     <!--logo end-->
-
+                    <div class='mobile-only inline-logo'><img src="assets/img/logo.png"></div>
                     <!--responsive toggle button start-->
                     <button type="button" class="navbar-toggler btn" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
                         <span id="hamburgerTrigger">
@@ -58,7 +57,7 @@
                                 <a class="nav-link custom-nav-link" href="#chart">Chart</a>
                             </li>
                             <li class="nav-item custom-nav-item">
-                                <a class="nav-link custom-nav-link" href="freedom.pdf">Whitepaper</a>
+                                <a class="nav-link custom-nav-link" href="freedom_token.pdf">Whitepaper</a>
                             </li>
                             <li class="nav-item custom-nav-item">
                                 <a class="nav-link custom-nav-link" href="#socials">Socials</a>
@@ -94,8 +93,8 @@
                             <h1 class="text-white display-4 font-weight-bolder">Freedom Token</h1>
                             <p class="lead mb-4">Join the global movement!</p>
                             <!-- <p>&nbsp;<span class="copied">Copied!</span></p> -->
-                            <a onclick="copyContract('contract')" class="btn btn-brand-03 btn-lg"><i class="far fa-clipboard mr-2"></i>0x05062a3199273415a4209c59eb02279cf8f90585</a>
-                            <input type="text" hidden=true value="0x05062a3199273415a4209c59eb02279cf8f90585" id="contract">
+                            <a onclick="copyContract('contract')" class="btn btn-brand-03 btn-lg"><i class="far fa-clipboard mr-2"></i>0x91a241bdd64731bf17d91b9262460037a1407e3e</a>
+                            <input type="text" hidden=true value="0x91a241bdd64731bf17d91b9262460037a1407e3e" id="contract">
                         </div>
                     </div>
                 </div>
@@ -114,8 +113,8 @@
                         <div class="application-hosting-wrap">
                             <ul class="app-list apps">
                                 <li><a href="#"  onClick='alert("Coming soon!")' class="bg-white shadow text-dark"><img src="assets/img/pancake.png" alt="icon"> <span>Pancake Swap</span></a></li>
-                                <li><a href="#chart" onClick='alert("Coming soon!")' class="bg-white shadow text-dark"><img src="assets/img/chart.png" alt="icon"> <span>Live chart<br></span></a></li>
-                                <li><a href="freedom.pdf" class="bg-white shadow text-dark"><img src="assets/img/whitepaper.png" alt="icon"> <span>Whitepaper</span></a></li>
+                                <li><a href="#chart" class="bg-white shadow text-dark"><img src="assets/img/chart.png" alt="icon"> <span>Live chart<br></span></a></li>
+                                <li><a href="freedom_token.pdf" class="bg-white shadow text-dark"><img src="assets/img/whitepaper.png" alt="icon"> <span>Whitepaper</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -181,14 +180,13 @@
             </div>
         </section>
 
-        <section class="chart ptb-100  dark-bg nodisplay" id="chart">
+        <section class="chart ptb-100  dark-bg " id="chart">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-7">
                         <div class="section-heading text-center">
                             <h2>Chart goes here</h2>
-                            <p>---</p>
-                            <iframe id="tradingview_33638" name="tradingview_33638" src="/charts1/charting_library/en-tv-chart.ca0cc69b.html#symbol=0xb27adaffb9fea1801459a1a81b17218288c097cc-0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c-POOCOIN-BNB&amp;interval=15&amp;widgetbar=%7B%22details%22%3Afalse%2C%22watchlist%22%3Afalse%2C%22watchlist_settings%22%3A%7B%22default_symbols%22%3A%5B%5D%7D%7D&amp;timeFrames=%5B%7B%22text%22%3A%221m%22%2C%22resolution%22%3A%2260%22%2C%22description%22%3A%221%20Month%22%7D%2C%7B%22text%22%3A%221w%22%2C%22resolution%22%3A%2215%22%2C%22description%22%3A%225%20Days%22%7D%2C%7B%22text%22%3A%221d%22%2C%22resolution%22%3A%221%22%2C%22description%22%3A%221%20Day%22%7D%5D&amp;locale=en&amp;uid=tradingview_33638&amp;clientId=0&amp;userId=0&amp;chartsStorageVer=1.0&amp;debug=false&amp;timezone=Europe%2FTallinn&amp;theme=Dark" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen="" style="display: block; width: 100%; height: 100%;"></iframe>
+                            <div class="chart"><iframe class="chartie" loading="lazy" width="100%" height="500px" class src="https://charts.bogged.finance/?token=0x91a241bdd64731bf17d91b9262460037a1407e3e"></iframe></div>
                         </div>
                     </div>
                 </div>

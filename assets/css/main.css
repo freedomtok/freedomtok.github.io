@@ -60344,5 +60344,23 @@ display: none;
       display: none;
   }
 
+  .mobile-only.inline-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    }
+
+
+  /* .mobile-only.inline-logo {
+    text-align: center;
+    margin: 0px auto;
+    max-width: 50%;
+    position: relative;
+    top: 20px;
+} */
 /*# sourceMappingURL=../../../scss */
 /*# sourceMappingURL=main.css.map */
