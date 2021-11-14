@@ -52929,6 +52929,9 @@ ul.disc-style li {
   .work-process-item:nth-child(2) .work-process-number::before {
     display: none;
   }
+  .mt-n-90 {
+    margin-top: -30px;
+  }
 }
 
 @media only screen and (max-width: 575.98px) {
@@ -53088,10 +53091,13 @@ ul.disc-style li {
   left: -16px;
 }
 
-@media (min-width: 320px) and (max-width: 1199px) {
+@media (min-width: 320px) and (max-width: 1236px) {
   /* line 119, src/assets/scss/components/review-section/_review-1.scss */
   .testimonial-content-wrap .testimonial-tb-shape.shape-top, .testimonial-content-wrap .testimonial-tb-shape.shape-bottom {
     display: none;
+  }
+  .mt-n-90 {
+    margin-top: -40px;
   }
 }
 
@@ -60353,6 +60359,19 @@ display: none;
     top: 15px;
     left: 15px;
     }
+
+  input#contract {
+      width: 100%;
+      text-align: center;
+  }
+
+  .inner-contract {
+    background-color: #f67a3c;
+    padding: 5px;
+    border: 0px;
+    color: #fff;
+    font-weight: bold;
+}
 
 
   /* .mobile-only.inline-logo {

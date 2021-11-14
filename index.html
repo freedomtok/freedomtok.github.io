@@ -66,7 +66,7 @@
                             <li class="nav-item header-nav-last-item d-flex align-items-center">
                                 <a class="btn btn-brand-03 animated-btn" href="#donate">
                                     <span class="fa fa-coin pr-2"></span> Donate
-                                </a>
+                                </a>\
                             </li>
                             <!--button end-->
                         </ul>
@@ -92,9 +92,9 @@
                         <div class="hero-content-left text-white text-center">
                             <h1 class="text-white display-4 font-weight-bolder">Freedom Token</h1>
                             <p class="lead mb-4">Join the global movement!</p>
-                            <!-- <p>&nbsp;<span class="copied">Copied!</span></p> -->
-                            <a onclick="copyContract('contract')" class="btn btn-brand-03 btn-lg"><i class="far fa-clipboard mr-2"></i>0x91a241bdd64731bf17d91b9262460037a1407e3e</a>
-                            <input type="text" hidden=true value="0x91a241bdd64731bf17d91b9262460037a1407e3e" id="contract">
+                            <input type="text" class="inner-contract" disabled  type=hidden value="0x91a241bdd64731bf17d91b9262460037a1407e3e" id="contract">
+                            <br>
+                            <button class="clipboard btn btn-outline-brand-03 mt-3" onclick="copyContract('contract')"><i class="far fa-clipboard mr-2"></i> Copy</button>
                         </div>
                     </div>
                 </div>
