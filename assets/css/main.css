@@ -60373,6 +60373,24 @@ display: none;
     font-weight: bold;
 }
 
+@media (max-width: 320px) {
+  /* line 19, src/assets/scss/generic/_generic.box-sizing.scss */
+  .navbar-brand img {
+    max-width: 40px !important;
+  }
+  .mobile-only.inline-logo {
+    max-width: 33% !important;
+    margin: 0px auto;
+    left: 10% !important;
+  }
+
+  button.clipboard.btn.btn-outline-brand-03.mt-3 {
+    min-width: 40% !important;
+}
+
+} 
+
+
 
   /* .mobile-only.inline-logo {
     text-align: center;
