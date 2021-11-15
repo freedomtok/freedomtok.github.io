@@ -5,16 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!--favicon icon-->
     <link rel="icon" href="assets/img/logo_fr.png" type="image/png" sizes="16x16">
-
-    <!--title-->
     <title>Freedomtoken</title>
-
-    <!--build:css-->
+    <!-- <script src="/assets/clipboard.js-master/dist/clipboard.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
-    <!-- endbuild -->
 </head>
 
 
@@ -92,9 +87,10 @@
                         <div class="hero-content-left text-white text-center">
                             <h1 class="text-white display-4 font-weight-bolder">Freedom Token</h1>
                             <p class="lead mb-4">Join the global movement!</p>
-                            <input type="text" class="inner-contract" disabled  type=hidden value="0x91a241bdd64731bf17d91b9262460037a1407e3e" id="contract">
-                            <br>
-                            <button class="clipboard btn btn-outline-brand-03 mt-3" onclick="copyContract('contract')"><i class="far fa-clipboard mr-2"></i>Copy</button>
+                            <input type="text" class="inner-contract" disabled  value="0x91a241bdd64731bf17d91b9262460037a1407e3e" id="contract">
+                            <p class="copied">Success!</p>
+                            <button class="clipboard btn btn-outline-brand-03 mt-3"  data-clipboard-text="0x91a241bdd64731bf17d91b9262460037a1407e3e">
+                            <i class="far fa-clipboard mr-2"></i>Copy</button>
                         </div>
                     </div>
                 </div>
@@ -186,7 +182,7 @@
                     <div class="col-md-10 col-lg-10">
                         <div class="section-heading text-center">
                             <h2>Live chart</h2>
-                            <div class="chart"><iframe class="chartie" loading="lazy" width="100%" height="750px" class src="https://charts.bogged.finance/?token=0x91a241bdd64731bf17d91b9262460037a1407e3e"></iframe></div>
+                            <!-- <div class="chart"><iframe class="chartie" loading="lazy" width="100%" height="750px" class src="https://charts.bogged.finance/?token=0x91a241bdd64731bf17d91b9262460037a1407e3e"></iframe></div> -->
                         </div>
                     </div>
                 </div>
@@ -251,19 +247,19 @@
                                 <li>
                                     <a class="dark-bg text-white"><img src="assets/img/bnb.svg" alt="icon"> <span>BNB</span>
                                         <input type="text" class="inner" disabled  type=hidden value="bnb1tjr4x06862dltc6hedth46tpd80l2ya073f0cg" id="bnb">
-                                        <button class="clipboard btn btn-outline-brand-03 mt-3" onclick="copyContract('bnb')"><i class="far fa-clipboard mr-2"></i></button>
+                                        <button class="clipboard btn btn-outline-brand-03 mt-3" data-clipboard-text="bnb1tjr4x06862dltc6hedth46tpd80l2ya073f0cg"><i class="far fa-clipboard mr-2"></i></button>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dark-bg text-white"><img src="assets/img/eth.svg" alt="icon"> <span>ETH</span>
                                         <input type="text" class="inner" disabled  type=hidden value="0x32256A08aBA4265747B6F80170DC988061CDB5Cc" id="eth">
-                                        <button class="clipboard btn btn-outline-brand-03 mt-3" onclick="copyContract('eth')"><i class="far fa-clipboard mr-2"></i></button>
+                                        <button class="clipboard btn btn-outline-brand-03 mt-3" data-clipboard-text="0x32256A08aBA4265747B6F80170DC988061CDB5Cc""><i class="far fa-clipboard mr-2"></i></button>
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dark-bg text-white"><img src="assets/img/btc.svg" alt="icon"> <span>BTC</span>
                                         <input type="text" class="inner" disabled  type=hidden value="bc1q27wa02cfutr25vs53twdly28dnm8fxysf46cyv" id="btc">
-                                        <button class="clipboard btn btn-outline-brand-03 mt-3" onclick="copyContract('btc')"><i class="far fa-clipboard mr-2"></i></button>
+                                        <button class="clipboard btn btn-outline-brand-03 mt-3" data-clipboard-text="bc1q27wa02cfutr25vs53twdly28dnm8fxysf46cyv"><i class="far fa-clipboard mr-2"></i></button>
                                     </a>
                                 </li>
                             </ul>
@@ -297,19 +293,23 @@
     </div>
     <!--scroll bottom to top button end-->
     <script>
-        function copyContract(id) {
-            console.log(id)
-            var copyText = document.getElementById(id);
+        var clipboard = new ClipboardJS('.btn');
 
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        clipboard.on('success', function(e) {
+            window.alert('Copied!')
+            document.getElementsByClassName('copied').style.visibility = 'visible';
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
 
-            /* Copy the text inside the text field */
-            navigator.clipboard.writeText(copyText.value);
+            e.clearSelection();
+        });
 
-            /* Alert the copied text */
-            alert("Copied!");
-        }
+        clipboard.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+        });
+
     </script>
 
 

@@ -60285,7 +60285,7 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 1.4vh;
   }
       .mobile-only {
-          display: none !important;
+          display: none;
       }
   }
 
@@ -60298,10 +60298,10 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .copied {
-color: #083c96;
-display: none;
-  font-size: 999pc;
-  z-index: 99;
+  color: #083c96;
+  display: none;
+    font-size: 999pc;
+    z-index: 99;
   }
   
   html {
